@@ -72,3 +72,4 @@ algunos comandos utiles de ollama son los siguientes
   rm          Remove a model
   help        Help about any command
 ```
+
