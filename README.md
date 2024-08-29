@@ -92,3 +92,12 @@ curl -X POST http://localhost:11434/api/generate -d '{
   "stream": false
 }'
 ```
+
+
+### Comandos GIT
+
+```bash
+git add .
+git commit -m "apis request"
+git push -u origin main
+```
