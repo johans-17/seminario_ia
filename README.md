@@ -52,7 +52,7 @@ Si el modelo no tiene versiones no es nesesario poner :version por ejemplo
 ollama run gemma2
 ```
 
-# Comandos
+# Comandos de Ollama
 
 algunos comandos utiles de ollama son los siguientes
 ```bash
