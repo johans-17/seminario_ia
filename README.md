@@ -101,3 +101,24 @@ git add .
 git commit -m "apis request"
 git push -u origin main
 ```
+
+## GroqCloud
+### Creacion de API Key
+Se ingresa a la pagina de [GroqCloud](https://console.groq.com/) se inicia sesion con Github y se da click en Api Keys luego en Create API Key se crea la API Key y se copia la KEY
+
+### Conectarse a la API Key
+con la API Key usamos el siguiente comando para definir la variable de entorno que la contendra para su uso
+
+```bash
+export GROQ_API_KEY=<your-api-key-here>
+```
+
+### Realizar un Request
+
+Para realizar un request se ejecuta el siguiente comando
+```bash
+curl -X POST "https://api.groq.com/openai/v1/chat/completions" \
+     -H "Authorization: Bearer $GROQ_API_KEY" \
+     -H "Content-Type: application/json" \
+     -d '{"messages": [{"role": "user", "content": "why is the sky blue"}], "model": "llama3-8b-8192"}'
+```
